@@ -9,6 +9,7 @@
 #import <Foundation/Foundation.h>
 #import "AssociateDelegate.h"
 
+
 @interface Associate : NSObject <AssociateDelegate>
 
 

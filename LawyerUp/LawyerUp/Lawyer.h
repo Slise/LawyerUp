@@ -16,9 +16,11 @@
 @property (nonatomic, strong) NSString *name;
 @property (nonatomic, assign) TypesOfPractices specialties;
 @property (nonatomic, strong) NSNumber *lawyerRates;
-@property (nonatomic, strong) NSArray *clientList;
+@property (nonatomic, strong) NSMutableArray *clientList;
 @property (nonatomic, weak) id<AssociateDelegate> delegate;
 
+
+-(instancetype)initWithName: (NSString *)name specialties:(TypesOfPractices)specialties practice:(Practice*)practice;
 -(void)addClient:(Client*)client;
 -(int)getPayableAmountForClient:(Client*)client;
 

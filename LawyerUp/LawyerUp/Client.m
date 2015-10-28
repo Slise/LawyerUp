@@ -10,4 +10,16 @@
 
 @implementation Client
 
+
+-(instancetype)initWithName: (NSString *) name descriptionOfProblem: (NSString *) descriptionOfProblem specialtyType: (TypesOfPractices *) specialtyType {
+    self = [super init];
+    if (self) {
+        _name = name;
+        _descriptionOfProblem = descriptionOfProblem;
+        _specialtyType = specialtyType;
+    }
+    return self;
+    
+}
+
 @end

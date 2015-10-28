@@ -7,12 +7,12 @@
 //
 
 #import <Foundation/Foundation.h>
-#import "Client.h"
-#import "Lawyer.h"
+@class Client;
+@class Lawyer;
 
 @protocol AssociateDelegate <NSObject>
 
--(void)addClientToClientList:(Client *)client forLawyer:(Lawyer*)lawyer;
--(int)payableAmountForClient:(Client *)client forLawyer:(Lawyer*)lawyer;
+-(void)addClientToClientList:(Client *)client forLawyer:(Lawyer *)lawyer;
+-(int)payableAmountForClient:(Client *)client forLawyer:(Lawyer *)lawyer;
 
 @end

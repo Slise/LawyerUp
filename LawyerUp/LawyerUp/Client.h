@@ -13,7 +13,9 @@
 
 @property (nonatomic, strong) NSString *name;
 @property (nonatomic, strong) NSString *descriptionOfProblem;
-@property (nonatomic, strong) TypesOfPractices *specialtyType;
+@property (nonatomic, assign) TypesOfPractices *specialtyType;
+
+-(instancetype)initWithName: (NSString *) name descriptionOfProblem: (NSString *) descriptionOfProblem specialtyType: (TypesOfPractices *) specialtyType;
 
 
 @end
